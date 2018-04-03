@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  .uhhh {
+    background-color: yellow;
+  }
+  </style>
   <title>jQuery test page</title>
 </head>
 <body>
@@ -41,7 +46,12 @@
     $("h2").show();
     $("h3").show();
   }
-
+function highlightByLine() {
+  $(".byline").addClass("uhhh");
+}
+function unhighlightByline() {
+  $(".byline").removeClass("uhhh");
+}
 
 
   </script>
