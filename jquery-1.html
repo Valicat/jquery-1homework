@@ -15,17 +15,23 @@
   <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
-  function getHeadline(headline) {
+  function getHeadline() {
     var headline = $("h1").text();
     return(headline);
   }
-  function changeHeadlines(newHeadline, newText) {
+  function changeHeadlines() {
     var newHeadline = $("h1").text("New headline");
     var newText = $("h2").text("A Wikipedia article");
   }
   function logHeadlines() {
     console.log( $("h1").text());
     console.log( $("h2").text());
+  }
+  function swapHeadlines() {
+    var swap1 = $("h1").text();
+    var swap2 = $("h2").text();
+    $("h1").text(swap2);
+    $("h2").text(swap1);
   }
 
 
